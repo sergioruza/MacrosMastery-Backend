@@ -1,6 +1,6 @@
 <h1 align="center">:construction: Projeto em Desenvolvimento :construction:</h1>
 
-# MacrosMastery
+# MacrosMastery(backend)
 
 <fig>
 <img width=250 src="./images/logo-macros.png" alt="logo.png">
@@ -10,7 +10,7 @@
 O MacrosMastery é um projeto em desenvolvimento que tem como objetivo fornecer uma plataforma online para cálculo de macros de dieta flexível, acompanhamento de progresso e compartilhamento de informações relacionadas à nutrição.
 
 ## Status do Projeto
-O MacrosMastery ainda está em fase de desenvolvimento ativo. Durante essa fase, estamos trabalhando na implementação das principais funcionalidades e aprimorando a interface do usuário.
+O MacrosMastery ainda está em fase de desenvolvimento ativo. Durante essa fase, estamos trabalhando na implementação das principais funcionalidades e aprimorando a interface do usuário. Esse repositório é dedicado ao backend da aplicação.
 
 ## Funcionalidades Planejadas
 O projeto MacrosMastery está sendo desenvolvido com as seguintes funcionalidades planejadas:

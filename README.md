@@ -17,7 +17,7 @@ O projeto MacrosMastery está sendo desenvolvido com as seguintes funcionalidade
 
 - Cálculo de macros personalizados: Os usuários poderão inserir suas informações pessoais, como peso, altura, idade, nível de atividade física, objetivos de fitness, e o sistema fornecerá recomendações de macros personalizadas para atingir esses objetivos.
 
-- Acompanhamento de progresso: Os usuários poderão registrar seu peso, medidas corporais e outras métricas de progresso. O MacroFlex exibirá o histórico para acompanhar a evolução dos usuários ao longo do tempo.
+- Acompanhamento de progresso: Os usuários poderão registrar seu peso, medidas corporais e outras métricas de progresso. O MacrosMastery exibirá o histórico para acompanhar a evolução dos usuários ao longo do tempo.
 
 - Posts educativos: O MacrosMastery contará com uma seção de blog, onde serão publicados artigos informativos sobre nutrição, alimentos, índice glicêmico e outros tópicos relevantes para uma dieta flexível.
 
@@ -40,7 +40,7 @@ Neste momento, não estamos aceitando contribuições externas, uma vez que o pr
   - Este projeto foi desenvolvido por um entusiasta amador da área da nutrição e não substitui o aconselhamento profissional de médicos ou nutricionistas. As informações fornecidas pelo projeto são apenas para fins educacionais e de referência geral.
   - É importante ressaltar que cada pessoa é única e tem necessidades nutricionais individuais. O cálculo de macros e qualquer outra informação fornecida pelo projeto podem não ser adequados ou precisos para todas as pessoas.
   - Recomendamos fortemente que você consulte um profissional de saúde qualificado, como um médico ou nutricionista, antes de fazer mudanças significativas em sua dieta ou seguir as informações fornecidas pelo projeto. Eles poderão avaliar sua saúde, necessidades específicas e fornecer orientações personalizadas.
-  - O autor deste projeto não assume nenhuma responsabilidade por quaisquer danos ou consequências causados pelo uso das informações fornecidas pelo projeto. O uso deste projeto é de total        responsabilidade do usuário.
+  - O autor deste projeto não assume nenhuma responsabilidade por quaisquer danos ou consequências causados pelo uso das informações fornecidas pelo projeto. O uso deste projeto é de total responsabilidade do usuário.
 
   </details>
 

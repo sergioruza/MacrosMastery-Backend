@@ -1,4 +1,3 @@
-// src/connection.ts
 import 'dotenv/config';
 import { Options } from 'sequelize';
 

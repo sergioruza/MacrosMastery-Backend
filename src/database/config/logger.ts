@@ -5,9 +5,9 @@ const logger = bunyan.createLogger({
   name: 'MacrosMastery',
   streams: [
     {
-      stream: BunyanFormat({ outputMode: 'long' })
-    }
-  ]
+      stream: BunyanFormat({ outputMode: 'long' }),
+    },
+  ],
 });
 
 export default logger;

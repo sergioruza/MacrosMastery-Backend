@@ -1,0 +1,8 @@
+const path = require('path');
+
+module.exports = {
+  config: path.resolve('src', 'database', 'config', 'connection.ts'), // Caminho para o arquivo de configuração do banco de dados
+  'models-path': path.resolve('src', 'database', 'models'), // Caminho para os modelos do Sequelize
+  'seeders-path': path.resolve('src', 'database', 'seeders'), // Caminho para os seeders do Sequelize
+  'migrations-path': path.resolve('src', 'database', 'migrations'), // Caminho para as migrações do Sequelize
+};

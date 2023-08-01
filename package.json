@@ -2,9 +2,12 @@
   "name": "teste",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/index",
   "scripts": {
     "dev": "ts-node-dev --inspect=0.0.0.0:9229 --watch --respawn --transpile-only --ignore-watch node_modules -r tsconfig-paths/register ./src/api/server.ts",
+    "prestart": "npm run build && npm run db:reset",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "build": "/bin/sh tsc_eval.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
@@ -30,7 +33,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.0",
     "sequelize-cli": "^6.6.1",
-    "typescript": "4.1"
+    "typescript": "4.4.4"
   },
   "dependencies": {
     "bunyan": "^1.8.15",

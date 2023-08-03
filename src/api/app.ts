@@ -1,3 +1,4 @@
+import 'express-async-errors';
 import express from 'express';
 import { logger } from '../database/config';
 import routes from './routes';

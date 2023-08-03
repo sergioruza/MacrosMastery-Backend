@@ -1,6 +1,7 @@
 import express from 'express';
 import { logger } from '../database/config';
 import routes from './routes';
+import ErrorHandling from './middlewares/ErrorHandling';
 
 class App {
   private app: express.Express;
@@ -18,6 +19,8 @@ class App {
   private configureRoutes() {
     this.app.get('/', (req, res) => res.send('hello'));
     this.app.use(routes);
+
+    this.app.use(ErrorHandling);
   }
 
   public start(port: number) {

@@ -2,8 +2,8 @@
   "compilerOptions": {
     "alwaysStrict": true,
     "noImplicitAny": true,
-    "rootDirs": ["src", "tests"],
-    "baseUrl": "src",
+    "rootDirs": ["./src", "./tests"],
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
@@ -12,14 +12,17 @@
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "dist",
+    "outDir": "./build",
     "removeComments": true,
     "strict": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
     "strictNullChecks": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "target": "es2021",
+    "target": "ES2019",
     "types": ["node"],
     "paths": {
       "@/*": ["*"],
@@ -29,3 +32,21 @@
   "exclude": ["node_modules", "dist", "tests"],
   "include": ["src/**/*"]
 }
+
+
+// "target": "es2019",
+// "module": "commonjs",
+// "sourceMap": true,
+// "outDir": "./build",
+// "rootDir": "./src",
+// "strict": true,
+// "moduleResolution": "node",
+// "baseUrl": ".",
+// "forceConsistentCasingInFileNames": true,
+// "resolveJsonModule": true,
+// "experimentalDecorators": true,
+// "emitDecoratorMetadata": true,
+// "skipLibCheck": true,
+// "paths": {
+//   "*": ["node_modules/*"]
+// }

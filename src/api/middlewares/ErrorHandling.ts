@@ -7,3 +7,9 @@ export default (err: Error & Partial<ApiError>, req: Request, res: Response) => 
 
   return res.status(statusCode).json({ message });
 };
+
+export class BadRequestError extends ApiError {
+  constructor(message: string) {
+    super(message, 400);
+  }
+}

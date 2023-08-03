@@ -1,7 +1,6 @@
 import { Request, Router, Response } from 'express';
 import fs from 'fs';
-import { ApiError } from '../helpers/api-erros';
-import { BadRequestError } from '../middlewares/ErrorHandling';
+import { ApiError, BadRequestError } from '../helpers/api-erros';
 const routes = Router();
 
 export default routes.get('/teste', (req: Request, res: Response) => {

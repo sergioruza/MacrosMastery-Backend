@@ -1,1 +1,3 @@
-export default 'teste';
+import usersRoute from './usersRoute';
+
+export { usersRoute };

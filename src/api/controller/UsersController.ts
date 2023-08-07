@@ -4,9 +4,6 @@ import IUser from '../interfaces/User';
 
 export default class UserController {
   private _usersService: UsersService = new UsersService();
-  // async create(req: Request, res: Response) {
-  //   const { name, email, password, username } = req.body;
-  // }
 
   async getAllUsers(req: Request, res: Response) {
     const users = await this._usersService.getUsers();

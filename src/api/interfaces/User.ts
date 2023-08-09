@@ -13,3 +13,9 @@ export interface IUserResponse {
   username: string;
   email: string;
 }
+
+export interface IUserToken {
+  email: string;
+  name: string;
+  username: string;
+}

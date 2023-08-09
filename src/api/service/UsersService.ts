@@ -1,7 +1,7 @@
 import User from '@/src/database/models/UserModel';
 import { ModelStatic } from 'sequelize';
 import { IUser, IUserResponse } from '../interfaces/User';
-import { BadRequestError, NotFoundError, UnauthorizedError } from '../helpers/api-erros';
+import { BadRequestError } from '../helpers/api-erros';
 import bcrypt from 'bcrypt';
 
 export default class UsersService {

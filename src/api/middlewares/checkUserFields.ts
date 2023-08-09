@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import IUser from '../interfaces/User';
+import { IUser } from '../interfaces/User';
 import { BadRequestError } from '../helpers/api-erros';
 
 const checkUserFields = (req: Request, res: Response, next: NextFunction) => {

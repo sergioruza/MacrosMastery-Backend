@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import UsersService from '../service/UsersService';
-import IUser from '../interfaces/User';
+import { IUser } from '../interfaces/User';
 
 export default class UserController {
   private _usersService: UsersService = new UsersService();

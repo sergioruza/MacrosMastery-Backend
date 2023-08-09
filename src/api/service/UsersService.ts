@@ -1,6 +1,6 @@
 import User from '@/src/database/models/UserModel';
 import { ModelStatic } from 'sequelize';
-import IUser from '../interfaces/User';
+import { IUser, IUserResponse } from '../interfaces/User';
 import { BadRequestError } from '../helpers/api-erros';
 import bcrypt from 'bcrypt';
 
@@ -12,7 +12,7 @@ export default class UsersService {
     return users;
   }
 
-  async create({ name, username, email, password }: IUser): Promise<IUser> {
+  async create({ name, username, email, password }: IUser): Promise<IUserResponse> {
     const hasUserWithEmail = await this.model.findOne({ where: { email } });
 
     if (hasUserWithEmail) {
@@ -21,6 +21,6 @@ export default class UsersService {
 
     const hashPass = await bcrypt.hash(password, 10);
     const createUser = await this.model.create({ name, username, email, password: hashPass });
-    return createUser;
+    return { id: createUser.id, name: createUser.name, username: createUser.username, email: createUser.email };
   }
 }

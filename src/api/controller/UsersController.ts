@@ -24,6 +24,6 @@ export default class UserController {
 
     const loginToken = await this._usersService.login(email, password);
 
-    return res.status(201).json(loginToken);
+    return res.status(200).json(loginToken);
   }
 }

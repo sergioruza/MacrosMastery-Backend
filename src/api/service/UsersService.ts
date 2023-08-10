@@ -3,6 +3,7 @@ import { ModelStatic } from 'sequelize';
 import { IUser, IUserResponse } from '../interfaces/User';
 import { BadRequestError } from '../helpers/api-erros';
 import bcrypt from 'bcrypt';
+import generateToken from '../token/generateToken';
 
 export default class UsersService {
   protected model: ModelStatic<User> = User;
@@ -31,5 +32,9 @@ export default class UsersService {
 
     const verifypass = await bcrypt.compare(password, user.password);
     if (!verifypass) throw new BadRequestError('Invalid email or password');
+
+    const token = generateToken({ id: user.id, name: user.name, username: user.username, email: user.email });
+
+    return { token };
   }
 }

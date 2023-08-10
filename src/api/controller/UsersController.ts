@@ -18,4 +18,12 @@ export default class UserController {
 
     return res.status(201).json(userCreate);
   }
+
+  async login(req: Request, res: Response) {
+    const { email, password } = req.body as IUser;
+
+    const loginToken = await this._usersService.login(email, password);
+
+    return res.status(201).json(loginToken);
+  }
 }

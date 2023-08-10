@@ -35,6 +35,9 @@ export default class UsersService {
 
     const token = generateToken({ id: user.id, name: user.name, username: user.username, email: user.email });
 
-    return { token };
+    return {
+      user: { id: user.id, name: user.name, username: user.username, email: user.email },
+      token,
+    };
   }
 }

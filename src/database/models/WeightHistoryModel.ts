@@ -1,5 +1,6 @@
 import { DATE, FLOAT, INTEGER, Model } from 'sequelize';
 import db from '.';
+import User from './UserModel';
 
 export default class WeightHistory extends Model {
   declare id: number;
@@ -34,3 +35,8 @@ WeightHistory.init(
     tableName: 'weight_history',
   },
 );
+
+WeightHistory.belongsTo(User, {
+  foreignKey: 'userId',
+  as: 'user',
+});

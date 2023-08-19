@@ -1,7 +1,7 @@
 import 'express-async-errors';
 import express from 'express';
 import { logger } from '../database/config';
-import { usersRoute } from './routes';
+import { anthropometry, usersRoute } from './routes';
 import ErrorHandling from './middlewares/ErrorHandling';
 
 class App {
@@ -20,6 +20,7 @@ class App {
   private configureRoutes() {
     this.app.get('/', (req, res) => res.send('hello'));
     this.app.use(usersRoute);
+    this.app.use(anthropometry);
 
     this.app.use(ErrorHandling);
   }

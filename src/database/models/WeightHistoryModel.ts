@@ -16,7 +16,7 @@ WeightHistory.init(
       autoIncrement: true,
       primaryKey: true,
     },
-    userId: {
+    user_id: {
       type: INTEGER,
       allowNull: false,
     },
@@ -28,12 +28,12 @@ WeightHistory.init(
       type: DATE,
       allowNull: false,
     },
-    createdAt: {
+    created_at: {
       allowNull: false,
       type: DATE,
       defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
     },
-    updatedAt: {
+    updated_at: {
       allowNull: false,
       type: DATE,
       defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -43,6 +43,7 @@ WeightHistory.init(
     sequelize: db,
     modelName: 'WeightHistory',
     tableName: 'weight_history',
+    underscored: true,
   },
 );
 

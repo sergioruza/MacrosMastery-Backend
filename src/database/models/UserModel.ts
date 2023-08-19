@@ -1,6 +1,5 @@
 import { STRING, Model, INTEGER } from 'sequelize';
 import db from '.';
-import WeightHistory from './WeightHistoryModel';
 
 export default class User extends Model {
   declare id: number;
@@ -42,5 +41,3 @@ User.init(
     modelName: 'users',
   },
 );
-
-// User.hasMany(WeightHistory, { as: 'user' });

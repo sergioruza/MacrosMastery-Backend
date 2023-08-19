@@ -47,7 +47,9 @@ WeightHistory.init(
   },
 );
 
-// WeightHistory.belongsTo(User, {
-//   foreignKey: 'userId',
-//   as: 'user',
-// });
+WeightHistory.belongsTo(User, {
+  foreignKey: 'userId',
+  as: 'user',
+});
+
+User.hasMany(WeightHistory, { as: 'user' });

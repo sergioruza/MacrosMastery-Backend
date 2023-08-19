@@ -1,4 +1,4 @@
-import { DATE, FLOAT, INTEGER, Model } from 'sequelize';
+import { DATE, FLOAT, INTEGER, Model, Sequelize } from 'sequelize';
 import db from '.';
 import User from './UserModel';
 
@@ -27,6 +27,16 @@ WeightHistory.init(
     date: {
       type: DATE,
       allowNull: false,
+    },
+    createdAt: {
+      allowNull: false,
+      type: DATE,
+      defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DATE,
+      defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
     },
   },
   {

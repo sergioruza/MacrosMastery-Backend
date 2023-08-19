@@ -43,4 +43,4 @@ User.init(
   },
 );
 
-User.hasMany(WeightHistory, { as: 'user' });
+// User.hasMany(WeightHistory, { as: 'user' });

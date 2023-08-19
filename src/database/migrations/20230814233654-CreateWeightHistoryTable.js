@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('weight_History', {
+    await queryInterface.createTable('weight_history', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -34,6 +34,6 @@ module.exports = {
   },
 
   async down(queryInterface) {
-    await queryInterface.dropTable('weight_History');
+    await queryInterface.dropTable('weight_history');
   },
 };
